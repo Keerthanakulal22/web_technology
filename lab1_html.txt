@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My First Web Page </title>
+</head>
+<body>
+	<!--Moving text-->
+	<h1><marquee>Basic HTML Tags </marquee></h1>
+	
+	<!--Different Heading Tags-->
+	<h1>WEB TECHNOLOGY LAB-BCSL504</h1>
+	<h2>WEB TECHNOLOGY LAB-BCSL504</h2>
+	<h3>WEB TECHNOLOGY LAB-BCSL504</h3>
+	<h4>WEB TECHNOLOGY LAB-BCSL504</h4>
+	<h5>WEB TECHNOLOGY LAB-BCSL504</h5>
+	<h6>WEB TECHNOLOGY LAB-BCSL504</h6>
+	
+	<!--Paragraph-->
+	<p>The p tag defines paragraph.Browsers automatically add a single blank line before and after each p element</p>
+	
+	<!horizontal line-->
+	<hr>
+	
+	<!--Line Break-->
+	<p><br>This tag inserts a single line break.<br>This tag is useful for writing addresses or poems.<br>
+	This tag is an empty tag whivh means that if has no end tag</p>
+	
+	<!--Block Quote-->
+	<blockquote>This tag specifies a section thst is quoted from another resources.Browsers usually indent blov=ckquote elements</blockquote>
+	
+	<!--Preformatted-->
+	<pre>this pre tag is preformatted text.It preserves soaces and line breaks.</pre>
+	
+	<!--Different Logical Style tags-->
+	<p>This is <b> Bold</b> text.</p>
+	<p>This is <i> Itallic </i> text.</p>
+	<p>This is <u> Underline</u> text.</p>
+	<p>This is <sub> Subscript </sub> tex.</p>
+	<p>This is <sup> Superscript </sup> text.</p>
+	<p>This is <em> Emphaiszed </em> text.</p>
+	<p>This is <strong> Strong </strong> text.</p>
+</body>
+</html>
