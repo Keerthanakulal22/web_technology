@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SMVITM Event Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef2f3;
+      margin: 18px;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    table {
+      width: 60%;
+      margin: 0 auto;
+      background-color: #fff;
+      border-collapse: collapse;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    th {
+      text-align: left;
+      padding: 20px;
+      background-color: #2980b9;
+      color: white;
+      font-size: 20px;
+    }
+    td {
+      padding: 25px;
+      font-size: 18px;
+      color: #333;
+    }
+    input[type="text"], input[type="email"], select, textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="submit"], input[type="reset"] {
+      background-color: #2980b9;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background-color: #45a049;
+    }
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+    .checkbox {
+      width: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>SMVITM Event Registration Form</h1>
+  <form action="#" method="post">
+    <table>
+      <tr>
+        <th colspan="2">Participant Information</th>
+      </tr>
+      <tr>
+        <td>Full Name:</td>
+        <td><input type="text" name="fullname" placeholder="Enter your full name" required></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td><input type="email" name="email" placeholder="Enter your email" required></td>
+      </tr>
+      <tr>
+        <td>Phone Number:</td>
+        <td><input type="text" name="phone" placeholder="Enter your contact number" required></td>
+      </tr>
+      <tr>
+        <td>Department:</td>
+        <td><input type="text" name="department" placeholder="Enter your department" required></td>
+      </tr>
+      <tr>
+        <td>Year:</td>
+        <td>
+          <select name="year" required>
+            <option value="">--Select Year--</option>
+            <option value="1st">1st Year</option>
+            <option value="2nd">2nd Year</option>
+            <option value="3rd">3rd Year</option>
+            <option value="4th">4th Year</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">Event Selection</th>
+      </tr>
+      <tr>
+        <td>Technical Events:</td>
+        <td>
+          <input type="checkbox" name="technical[]" value="Coding" class="checkbox">Coding
+          <input type="checkbox" name="technical[]" value="Robotics" class="checkbox">Robotics
+          <input type="checkbox" name="technical[]" value="Tech Quiz" class="checkbox">Tech Quiz
+        </td>
+      </tr>
+      <tr>
+        <td>Cultural Events:</td>
+        <td>
+          <input type="checkbox" name="cultural[]" value="Dance" class="checkbox">Dance
+          <input type="checkbox" name="cultural[]" value="Singing" class="checkbox">Singing
+          <input type="checkbox" name="cultural[]" value="Drama" class="checkbox">Drama
+        </td>
+      </tr>
+      <tr>
+        <td>Sports Events:</td>
+        <td>
+          <input type="checkbox" name="sports[]" value="Cricket" class="checkbox">Cricket
+          <input type="checkbox" name="sports[]" value="Football" class="checkbox">Football
+          <input type="checkbox" name="sports[]" value="Athletics" class="checkbox">Athletics
+        </td>
+      </tr>
+      <tr>
+        <td>Additional Comments:</td>
+        <td><textarea name="comments" placeholder="Any special requirements or notes"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center;">
+          <input type="submit" value="Register">
+          <input type="reset" value="Reset">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
