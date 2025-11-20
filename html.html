@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Personal Website</title>
+    <style>
+        /* Background */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6dd5fa, #2980b9);
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 30px;
+            background: rgba(0,0,0,0.4);
+            color: white;
+        }
+
+        /* Navigation links (optional) */
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: yellow;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: white;
+            letter-spacing: 2px;
+        }
+
+        /* Sections */
+        .section {
+            background: white;
+            width: 70%;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            opacity: 0; /* hidden initially for fade-in */
+            transition: opacity 1.2s;
+        }
+
+        h2 {
+            color: #2980b9;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 5px;
+        }
+
+        /* Resume */
+        .profile {
+            width: 120px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        /* Bio-data table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+        }
+        th {
+            background: #f2f2f2;
+            text-align: left;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: rgba(0,0,0,0.3);
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Personal Website</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#resume">Resume</a>
+        <a href="#biodata">Bio-data</a>
+    </nav>
+</header>
+
+<!-- HOME SECTION -->
+<section id="home" class="section">
+    <h2>Home</h2>
+    <p>Hello! Welcome to my website. Here you will find my Resume and Bio-data presented below.</p>
+</section>
+
+<!-- RESUME SECTION -->
+<section id="resume" class="section">
+    <h2>Resume</h2>
+    <img src="your-photo.jpg" class="profile" alt="Profile Photo">
+    <h3>Personal Information</h3>
+    <p><strong>Name:</strong> Keerthana</p>
+    <p><strong>Email:</strong> keerthana@email.com</p>
+    <p><strong>Phone:</strong> 9876543210</p>
+
+    <h3>Education</h3>
+    <ul>
+        <li>B.E— Shri Madhwa Vadiraja Institute of Technology Bantakal</li>
+        <li>12th — Jnanaganga Pre University Nellikatte, Moodubelle</li>
+    </ul>
+
+    <h3>Skills</h3>
+    <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python, Java</li>
+    </ul>
+</section>
+
+<!-- BIO-DATA SECTION -->
+<section id="biodata" class="section">
+    <h2>Bio-data</h2>
+    <table>
+        <tr><th>Name</th><td>Keerthana</tr>
+        <tr><th>Age</th><td>20</td></tr>
+        <tr><th>Gender</th><td>Female</td></tr>
+        <tr><th>Date of Birth</th><td>20-01-2005</td></tr>
+        <tr><th>Nationality</th><td>Indian</td></tr>
+        <tr><th>Languages Known</th><td>English, Hindi, Tulu, Kannada</td></tr>
+    </table>
+</section>
+
+<footer>
+    <p>© Hello 2025</p>
+</footer>
+
+<script>
+    // Fade-in effect for all sections
+    document.addEventListener("DOMContentLoaded", function() {
+        const sections = document.querySelectorAll(".section");
+        sections.forEach((sec, i) => {
+            setTimeout(() => { sec.style.opacity = 1; }, i * 300);
+        });
+    });
+</script>
+
+</body>
+</html>
